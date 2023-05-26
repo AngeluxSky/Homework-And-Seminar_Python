@@ -176,3 +176,97 @@
 #     if kg > max1:
 #         max1 = kg
 # print(min1, max1)
+
+# first_list = [9, 'fkr', True, [1, 2, 3]]
+
+# for i, element in enumerate(first_list):
+#     if element == 9:
+#         first_list[i] = 'nine'
+# print(first_list)
+
+# first_list.remove(9)
+
+
+# second_list = [41, 5, 1, 89, 4]
+# second_list.sort()
+# print(second_list)
+# print(sorted(second_list))
+
+
+# Дан список чисел. Определите, сколько в нем
+# встречается различных чисел.
+
+# num_list = [1, 6, 4, 5, 9, 1, 1, 80]
+# b = list(set(num_list))
+# print(len(b))
+
+
+# Задача №19. Решение в группах
+# Дана последовательность из N целых чисел и число
+# K. Необходимо сдвинуть всю последовательность
+# (сдвиг - циклический) на K элементов вправо, K –
+# положительное число.
+# Input: [1, 2, 3, 4, 5] k = 3
+# Output: [4, 5, 1, 2, 3]
+# Примечание: Пользователь может вводить значения
+# списка или список задан изначально.
+
+# n = [1, 2, 3, 4, 5]
+# k = int(input())
+# for i in range(k):
+#     t = n[0]
+#     for i in range(len(n)-1):
+#         n[i] = n[i + 1]
+#     n[-1] = t
+# print(n)
+
+
+# Напишите программу для печати всех уникальных
+# значений в словаре.
+# Input: [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"},
+# {"VI": "S005"}, {"VII": " S005 "}, {" V ":" S009 "}, {" VIII
+# ":" S007 "}]
+
+# Первое решение
+
+# data = [
+#     {"V": "S001"},
+#     {"V": "S002"},
+#     {"VI": "S001"},
+#     {"VI": "S005"},
+#     {"VII": "S005"},
+#     {"V": "S009"},
+#     {"VIII": "S007"}
+# ]
+#
+# unique_values = set()
+#
+# for item in data:
+#     for value in item.values():
+#         unique_values.add(value.strip())  # Добавляем уникальные значения в множество
+#
+# print(list(unique_values))
+
+
+# Второе решение
+
+# one_dict = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {"V": "S009"}, {"VIII": "S007"}]
+# values = set( val for dic in one_dict for val in dic.values())
+# print(values)
+
+
+# Дан массив, состоящий из целых чисел. Напишите
+# программу, которая подсчитает количество
+# элементов массива, больших предыдущего (элемента
+# с предыдущим номером)
+# Input: [0, -1, 5, 2, 3]
+
+# f_list = [0, -1, 5, 2, 3]
+# count = 0
+# for i in range(len(f_list) - 1):
+#     if f_list[i] < f_list[i + 1]:
+#         count += 1
+# print(count)
+
+# a = [int(a) for a in input().split() if int(a) > 0]
+# print(a)
