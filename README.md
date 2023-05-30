@@ -12,3 +12,9 @@
 
 
 (update Homework1, Evening_Seminar_Python 26.05.2023)
+
+
+- Урок 3. Списки и словари
+
+
+(add Homework2, Homework3 30.05.2023)
