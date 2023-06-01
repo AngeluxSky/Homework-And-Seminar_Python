@@ -18,3 +18,9 @@
 
 
 (add Homework2, Homework3 30.05.2023)
+
+
+- Урок 4. Словари, множества и профилирование
+
+
+(add Homework4, Evening_Seminar_Python 01.06.2023)
