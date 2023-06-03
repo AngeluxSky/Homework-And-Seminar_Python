@@ -331,10 +331,158 @@
 # будет меньше ошибок в коде, тот и выиграл спор. За
 # помощью товарищи обратились к Вам, студентам.
 
-n = int(input())
-max_num = n
-while n != 0:
-    n = int(input())
-    if n > max_num:
-        max_num = n
-print(max_num)
+# n = int(input())
+# max_num = n
+# while n != 0:
+#     n = int(input())
+#     if n > max_num:
+#         max_num = n
+# print(max_num)
+
+
+# Задача №31. Решение в группах
+# Последовательностью Фибоначчи называется
+# последовательность чисел a0
+# , a1
+# , ..., an
+# , ..., где
+# a0
+#  = 0, a1
+#  = 1, ak
+#  = ak-1 + ak-2 (k > 1).
+# Требуется найти N-е число Фибоначчи
+# (Задание необходимо решать через рекурсию)
+
+# n = int(input())
+# def fibonachi (n):
+#     if n in [1, 2]:
+#         return 1
+#     return fibonachi(n - 1) + fibonachi(n - 2)
+# print(fibonachi(n+1))
+
+
+# Доп. задача. Arr - отсортированная последовательность. k - число. Нужно найти индекс k. Если к нет, то вывести -1
+
+# from random import randint
+# a = []
+# for i in range(10):
+#     a.append(randint(1, 50))
+# a.sort()
+# print(a)
+#
+# n = int(input('Ищем: '))
+# mid = len(a) // 2
+# low = 0
+# high = len(a) - 1
+# while a[mid] != n and low <= high:
+#     if n > a[mid]:
+#         low = mid + 1
+#     else:
+#         high = mid - 1
+#     mid = (low + high) // 2
+# if low > high:
+#     print("-1")
+# else:
+#     print('А вот где он: ', mid)
+
+
+# Задача №33. Решение в группах
+# Хакер Василий получил доступ к классному журналу и
+# хочет заменить все свои минимальные оценки на
+# максимальные. Напишите программу, которая
+# заменяет оценки Василия, но наоборот: все
+# максимальные – на минимальные.
+# Input: 5 -> 1 3 3 3 4
+# Output: 1 3 3 3 1
+
+# def replace_grades(grades):
+#     max_grade = max(grades)
+#     min_grade = min(grades)
+#     for i in range(len(grades)):
+#         if grades[i] == max_grade:
+#             grades[i] = min_grade
+#         elif grades[i] == min_grade:
+#             grades[i] = max_grade
+#     return grades
+#
+# n = int(input("Введите количество оценок: "))
+# grades = list(map(int, input("Введите оценки через пробел: ").split()))
+# new_grades = replace_grades(grades)
+# print("Новые оценки:", " ".join(map(str, new_grades)))
+
+# Другое решение:
+# list1 = [1, 3, 3, 3, 4, 2, 5, 3, 1, 5]
+# print(list1)
+# max_value = max(list1)
+# min_value = min(list1)
+# i = 0
+# while i < len(list1):
+#     if list1[i] == max_value:
+#         list1[i] = min_value
+#     i += 1
+# print(list1)
+
+
+# Задача №35. Решение в группах
+# Напишите функцию, которая принимает одно число и
+# проверяет, является ли оно простым
+# Напоминание: Простое число - это число, которое
+# имеет 2 делителя: 1 и n(само число)
+# Input: 5
+# Output: yes
+
+# def SimpleNum(num):
+#     b = True
+#     for i in range(2, num):
+#         if num % i == 0:
+#             b = False
+#     return b
+#
+# print("Enter num")
+# n = int(input())
+# print(SimpleNum(n))
+
+# Другой вариант:
+
+# import math
+#
+# def is_prime(n):
+#     if n <= 1:
+#         return False
+#     elif n == 2:
+#         return True
+#     elif n % 2 == 0:
+#         return False
+#     else:
+#         for i in range(3, int(math.sqrt(n))+1, 2):
+#             if n % i == 0:
+#                 return False
+#         return True
+#
+# n = int(input("Введите число: "))
+# if is_prime(n):
+#     print(n, "является простым числом")
+# else:
+#     print(n, "не является простым числом")
+
+
+# Задача №37.
+# Дано натуральное число N и
+# последовательность из N элементов.
+# Требуется вывести эту последовательность в
+# обратном порядке.
+# Примечание. В программе запрещается
+# объявлять массивы и использовать циклы
+# (даже для ввода и вывода).
+
+# import math
+#
+#
+# n = int(input("Введите число: "))
+#
+# def prNum(n):
+#     for i in range(2, int(math.sqrt(n))):
+#         if n % i == 0:
+#             return print(f"Число {n} не является простым.")
+#     return print(f"Число {n} простое.")
+# prNum(n)
