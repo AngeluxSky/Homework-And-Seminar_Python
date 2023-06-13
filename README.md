@@ -41,4 +41,4 @@
 - Урок 7. Функции высшего порядка
 
 
-( (upd)Evening_Seminar_Python 11.06.2023)
+(add Homework7, (upd)Evening_Seminar_Python (13.06.2023, 11.06.2023))
