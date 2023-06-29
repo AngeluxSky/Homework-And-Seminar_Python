@@ -42,3 +42,15 @@
 
 
 (add Homework7, (upd)Evening_Seminar_Python (13.06.2023, 11.06.2023))
+
+- Урок 8. Работа с файлами
+
+(https://github.com/AngeluxSky/Phonebook_Python1)
+
+- Урок 9. Работа с табличными данными
+
+(https://github.com/AngeluxSky/Pythone_Phonebook_moduals)
+
+- Урок 10. Построение графиков
+
+(add new repository Final_project_23.06.23)
